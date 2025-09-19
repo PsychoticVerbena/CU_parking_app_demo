@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- CU PARKING header -->
+    <TextView
+        android:id="@+id/clemson_university_parking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Lot name -->
+    <TextView
+        android:id="@+id/lotName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brooks Lot"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Availability count -->
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 / 20 spots available"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- List of available spots -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/spotList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+    <!-- Bottom icons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/nav_map"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/reshot_icon_map_gps_zjh4kfswtl"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Map"/>
+
+        <ImageView
+            android:id="@+id/nav_myspace"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/reshot_icon_location_ph2qzjaxng"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="MySpace"/>
+    </RelativeLayout>
+
+</LinearLayout>
